@@ -1,0 +1,8 @@
+setup.py
+splicing/__init__.py
+splicing/splicing.py
+splicing.egg-info/PKG-INFO
+splicing.egg-info/SOURCES.txt
+splicing.egg-info/dependency_links.txt
+splicing.egg-info/not-zip-safe
+splicing.egg-info/top_level.txt

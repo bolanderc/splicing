@@ -1,0 +1,6 @@
+setup.py
+sig_splice.egg-info/PKG-INFO
+sig_splice.egg-info/SOURCES.txt
+sig_splice.egg-info/dependency_links.txt
+sig_splice.egg-info/not-zip-safe
+sig_splice.egg-info/top_level.txt

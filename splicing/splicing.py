@@ -14,6 +14,7 @@ See Also
 --------
 
 Notes
+-------
 
 References
 -----------
@@ -27,7 +28,7 @@ import numpy as np
 import scipy.interpolate as interpolate
 import matplotlib.pyplot as plt
 from rapidboom.sboomwrapper import SboomWrapper
-import pyldb
+import pyldb.core as pyldb
 
 
 class Splicing:
@@ -75,10 +76,12 @@ class Splicing:
         self.noise_level = pyldb.perceivedloudness(g_sig[:, 0], g_sig[:, 1],
                                                    pad_rear=4)
         print(self.noise_level)
+        return self.noise_level
 
     def splice_sigs(self, n_window=50, save_sig=[True, 'nearfield'],
                     plot=False, propagate=[False, 'nearfield', 3]):
-        self._crop_sigs(n_window)
+#        self._crop_sigs(n_window)
+        print('w')
         self._nondimensionalize_sigs()
         self._cut_and_blend()
         spliced_nf_xnd = np.concatenate((self.x_front_cutnd,
